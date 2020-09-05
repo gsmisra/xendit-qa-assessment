@@ -1,0 +1,169 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 3,
+    "pending": 0,
+    "failures": 1,
+    "start": "2020-09-04T19:32:15.257Z",
+    "end": "2020-09-04T19:33:12.386Z",
+    "duration": 57129,
+    "testsRegistered": 4,
+    "passPercent": 75,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "0b8931dd-f590-48fa-880e-205133c446e7",
+      "title": "",
+      "fullFile": "cypress\\integration\\calculatorSteps\\calculatorSteps.feature",
+      "file": "cypress\\integration\\calculatorSteps\\calculatorSteps.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "2d4da09b-b457-4569-941a-e2ba0d9796f3",
+          "title": "Launch the online calculator application and check basic arithmetic operations",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Verify the URL and the application canvas",
+              "fullTitle": "Launch the online calculator application and check basic arithmetic operations Verify the URL and the application canvas",
+              "timedOut": null,
+              "duration": 5436,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach(step =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "6f111dff-b434-4cc6-9d12-f139bae6eef7",
+              "parentUUID": "2d4da09b-b457-4569-941a-e2ba0d9796f3",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify Addition operations on the online calculator",
+              "fullTitle": "Launch the online calculator application and check basic arithmetic operations Verify Addition operations on the online calculator",
+              "timedOut": null,
+              "duration": 21137,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach(step =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "755c694e-4531-4698-b56a-11221c4fabc2",
+              "parentUUID": "2d4da09b-b457-4569-941a-e2ba0d9796f3",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify Substraction operations on the online calculator",
+              "fullTitle": "Launch the online calculator application and check basic arithmetic operations Verify Substraction operations on the online calculator",
+              "timedOut": null,
+              "duration": 15967,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach(step =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "9fced000-19a8-41a1-97cc-da7b2fb45941",
+              "parentUUID": "2d4da09b-b457-4569-941a-e2ba0d9796f3",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify Divission operations on the online calculator",
+              "fullTitle": "Launch the online calculator application and check basic arithmetic operations Verify Divission operations on the online calculator",
+              "timedOut": null,
+              "duration": 4073,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach(step =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "Error: Image was 0.7007690750860149% different from saved snapshot with 277 different pixels.\nSee diff for details: C:\\Users\\Public\\work\\cypress-bdd\\cypress\\snapshots\\calculatorSteps\\calculatorSteps.feature\\__diff_output__\\1-Division-calc-image.diff.png",
+                "estack": "Error: Image was 0.7007690750860149% different from saved snapshot with 277 different pixels.\nSee diff for details: C:\\Users\\Public\\work\\cypress-bdd\\cypress\\snapshots\\calculatorSteps\\calculatorSteps.feature\\__diff_output__\\1-Division-calc-image.diff.png\n    at Context.eval (https://www.online-calculator.com/__cypress/tests?p=cypress\\support\\index.js:1076:17)",
+                "diff": null
+              },
+              "uuid": "7466f0f3-11ad-42e9-a5ad-39519649d3e8",
+              "parentUUID": "2d4da09b-b457-4569-941a-e2ba0d9796f3",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "6f111dff-b434-4cc6-9d12-f139bae6eef7",
+            "755c694e-4531-4698-b56a-11221c4fabc2",
+            "9fced000-19a8-41a1-97cc-da7b2fb45941"
+          ],
+          "failures": [
+            "7466f0f3-11ad-42e9-a5ad-39519649d3e8"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 46613,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "xendit-qa-assessment-testrun-report",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "reportFilename": "xendit-qa-assessment-testrun-report",
+        "overwrite": true,
+        "html": true,
+        "json": true,
+        "charts": true
+      },
+      "version": "5.1.0"
+    }
+  }
+}
