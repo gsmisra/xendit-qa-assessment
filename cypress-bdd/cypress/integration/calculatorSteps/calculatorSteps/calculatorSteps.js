@@ -24,11 +24,13 @@ Then("Perform {string} to check the functionality", (calculationName, dataTable)
         }
 
         cy.Key__Press("=");
-        cy.wait(500);
+        cy.wait(1000);
         cy.setResolution( [ 600, 600 ] );
         var fileName = counter+"-"+calculationName+"-calc-image";       
-        //cy.get("#canvas").screenshot(fileName, { clip: { x: 80, y: 27, width: 350, height: 65 } });
-        cy.matchImageSnapshot(fileName, { clip: { x: 110, y: 27, width: 390, height: 65 } });
+        cy.get("#canvas").screenshot(fileName, { clip: { x: 80, y: 27, width: 350, height: 65 } });
+        //cy.matchImageSnapshot(fileName, { clip: { x: 110, y: 27, width: 390, height: 65 } });
+        cy.matchImageSnapshot(fileName);
+        cy.wait(1000);
         counter=counter+1;
         cy.Key__Press("C");
     });

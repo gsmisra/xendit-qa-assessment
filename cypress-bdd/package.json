@@ -7,7 +7,7 @@
     "cy:open": "cypress open",
     "cy:run": "cypress run",
     "cy:run-bdd": "cypress run cypress/integration/calculatorSteps/calculatorSteps.feature --headed --browser chrome --reporter mochawesome",
-    "cy:run-bdd-update-visuals": "cypress run cy:run-bdd -- --env updateSnapshots=true"
+    "cy:run-bdd-update-visuals": "npm run cy:run-bdd -- --env updateSnapshots=true"
   },
   "keywords": [
     "Cypress",
