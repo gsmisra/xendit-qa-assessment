@@ -1,0 +1,18 @@
+{
+    "reporter": "mochawesome",
+    "reporterOptions": {
+    "reportDir": "cypress/reports",
+    "reportFilename": "xendit-qa-assessment-testrun-report",
+    "overwrite": true,
+    "html": true,
+    "json": true,
+    "charts": true
+    },
+    "video": true,
+    "pageLoadTimeout": 10000,
+    "defaultCommandTimeout": 10000,
+    "env": {
+        "online_calc_url": "https://www.online-calculator.com/html5/online-calculator/index.php?v=10"
+    },
+    "ignoreTestFiles" : ["*.js", "*.md"]
+}
